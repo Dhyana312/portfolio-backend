@@ -11,8 +11,8 @@ mongoose.connect(process.env.MONGO_URI);
   const hash = await bcrypt.hash("admin123", 10);
 
   await Admin.create({
-    email: "dhyanadave312@gmail.com",
-    password: hash,
+    email: "kajalPandya.md@gmail.com",
+    password:hash,
   });
 
   console.log("✅ ADMIN CREATED IN DB");

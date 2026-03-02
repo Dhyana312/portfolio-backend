@@ -8,7 +8,8 @@ const app = express();
 
 /* ---------------- MIDDLEWARE ---------------- */
 app.use(cors({
-  origin: ["http://localhost:8080", "http://localhost:8081"],
+  origin: ["http://localhost:8080", "http://localhost:8081",    "https://portfolio-frontend-chi-three.vercel.app"
+],
   credentials: true,
 }));
 
