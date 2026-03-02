@@ -8,10 +8,10 @@ mongoose.connect(process.env.MONGO_URI);
 (async () => {
   await Admin.deleteMany({}); // optional cleanup
 
-  const hash = await bcrypt.hash("admin123", 10);
+  const hash = await bcrypt.hash("KajuDida ", 10);
 
   await Admin.create({
-    email: "kajalPandya.md@gmail.com",
+    email: "kajalPandya@gmail.com",
     password:hash,
   });
 
