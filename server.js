@@ -11,7 +11,7 @@ app.use(cors({
   origin: [
     "http://localhost:8080",
     "http://localhost:8081",
-    "https://portfolio-frontend-chi-three.vercel.app",
+    "https://portfolio-frontend-rouge-psi.vercel.app/",
     "https://portfolio-admin-dusky-theta.vercel.app"
   ],
   credentials: true,
