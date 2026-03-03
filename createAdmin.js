@@ -8,11 +8,13 @@ mongoose.connect(process.env.MONGO_URI);
 (async () => {
   await Admin.deleteMany({}); // optional cleanup
 
-  const hash = await bcrypt.hash("KajuDida", 10);
+  const plainPassword = "KajuDida123"; // ← choose clean password
+
+  const hash = await bcrypt.hash(plainPassword, 10);
 
   await Admin.create({
-    email: "kajalPandya@gmail.com",
-    password:hash,
+    email: "kajalpandya@gmail.com", // lowercase is important
+    password: hash,
   });
 
   console.log("✅ ADMIN CREATED IN DB");
