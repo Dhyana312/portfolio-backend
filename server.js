@@ -8,10 +8,15 @@ const app = express();
 
 /* ---------------- MIDDLEWARE ---------------- */
 app.use(cors({
-  origin: ["http://localhost:8080", "http://localhost:8081",    "https://portfolio-frontend-chi-three.vercel.app"
-],
+  origin: [
+    "http://localhost:8080",
+    "http://localhost:8081",
+    "https://portfolio-frontend-chi-three.vercel.app",
+    "https://portfolio-admin-dusky-theta.vercel.app"
+  ],
   credentials: true,
 }));
+
 
 app.use(express.json()); // ✅ ONCE is enough
 app.use(express.urlencoded({ extended: true }));
